@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    padding: 2.5rem;
+    margin: 2.5rem;
+    border-radius: 1rem;
+}
+
+.accordian {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 7.5rem;
+    height: 7.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.popover {
+    position: relative;
+}
+
+.popover .popoverChild {
+    position: absolute;
+    background-color: #fff;
+    top: 1rem;
+    left: 9rem;
+    z-index: 999;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    user-select: none;
+    width: 10rem;
+    font-size: 1.4rem;
+    overflow: hidden;
+}
+
+.popover .popoverChild > div {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.popover .popoverChild > div:hover {
+    background-color: #c9e3f7;
+}
